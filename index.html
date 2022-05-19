@@ -1,1 +1,23 @@
-Hello World
+<html>
+    <script src="https://unpkg.com/image-compare-viewer/dist/image-compare-viewer.min.js"></script>
+    <h1>Hectiq Photon</h1>
+    <h2>Image Compare Viewer</h2>
+    <h3>Compare two images</h3>
+    <div id="image-compare-viewer"></div>
+    <script>
+        var imageCompareViewer = new ImageCompareViewer({
+            images: [
+                {
+                    src: 'https://i.imgur.com/QQr0w9c.jpg',
+                    label: 'Image 1'
+                },
+                {
+                    src: 'https://i.imgur.com/QQr0w9c.jpg',
+                    label: 'Image 2'
+                }
+            ]
+        });
+        imageCompareViewer.appendTo('#image-compare-viewer');
+
+</html>
+
